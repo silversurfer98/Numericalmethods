@@ -48,5 +48,5 @@ def randclickonarr():
             move()
     
 #randclickonarr()
-clicklikewithargs()
-#poi()
+#clicklikewithargs()
+poi()

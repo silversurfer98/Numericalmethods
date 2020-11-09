@@ -2,8 +2,13 @@ from PIL import Image
 import pytesseract
 import numpy as np
 import pyautogui
-import tkinter as tk
+#import tkinter as tk
 
+
+def ck(a,b):
+    pyautogui.moveTo(int(a), int(b), 2)  
+    # moves mouse to X of 100, Y of 200 over 2 seconds
+    pyautogui.click()
 
 def takeScreenshot ():
     myScreenshot = pyautogui.screenshot()
@@ -107,7 +112,8 @@ for y in range(6):
 
     for x in range(6):
         if(arr1[i]==1):
-            pyautogui.click((left+(lll/2)),(top+(lll/2)))
+            ck((left+(lll/2)),(top+(lll/2)))
+            #pyautogui.click((left+(lll/2)),(top+(lll/2)))
         #print(arr2[i],(left+(lll/2)),(top+(lll/2)))
         left = left + ll
         right = right + ll
