@@ -6,7 +6,7 @@ import pyautogui
 
 
 def ck(a,b):
-    pyautogui.moveTo(int(a), int(b), 2)  
+    pyautogui.moveTo(int(a), int(b), 1)  
     # moves mouse to X of 100, Y of 200 over 2 seconds
     pyautogui.click()
 
